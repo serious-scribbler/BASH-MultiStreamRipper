@@ -7,8 +7,11 @@ The script generates a logfile for each of the streamripper instances.
 ## Requirements
 
 This script requires streamripper and bash to work!
+
 If you are using debian type
+
 `sudo apt-get install streamripper`
+
 For other operating systems use the specific command for your system
 
 ## Installation
