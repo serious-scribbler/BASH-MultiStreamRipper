@@ -15,7 +15,7 @@ logfile="$timestamp"
 logfile+=".log"
 print_help () {
 	echo "LIST OF AVAILABLE PARAMETERS:"
-	echo "-k	 -	Kills all instances of streamripper"
+	echo "-k		-	Kills all instances of streamripper"
 	echo "-t <s>	 -	The duration of recording in seconds"
 	echo "-d <path>	 - 	The folder where the output files will be saved"
 	echo "-help		 - 	Shows thid help"
