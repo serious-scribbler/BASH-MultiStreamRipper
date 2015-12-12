@@ -17,6 +17,7 @@ For other operating systems use the specific command for your system
 ## Installation
 
 *This instructions are for debian only!*
+
 1. Install all requirements
 2. Download multistream.sh using `wget https://raw.githubusercontent.com/serious-scribbler/BASH-MultiStreamRipper/master/multistream.sh`
 3. Make your script executable using `chmod +x multistream.sh`
@@ -26,7 +27,7 @@ For other operating systems use the specific command for your system
 ### Prepare a streamlist
 
 1. Use your favorite editor to create a text file (*with any name you like*)
-2. Insert URI's to mp3/ogg-webradio streams into the file (*one URI per line, no blank lines! You can find stream-URI at http://http://vtuner.com/ *)
+2. Insert URIs to mp3/ogg-webradio streams into the file ( *one URI per line, no blank lines! You can find stream-URI's at http://http://vtuner.com/ * )
 3. Create a output directory where you want to safe your songs at
 4. Save your textfile and copy/move it into your output directory
 5. Type ./multistream.sh -t <recording duration in seconds> -d <path to your output directory> -sl <full path of the streamlist-file>
