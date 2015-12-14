@@ -86,10 +86,6 @@ fi
 command=""
 linenumber=(eval "wc -l < $infile")
 lncounter=0
-echo "Cleaning old logfiles..."
-rm "$outfolder/stream*.log"
-rm "$outfolder/multistreamNo*.log"
-echo "Old logfiles have been removed!"
 echo "EXECUTING COMMANDS..."
 while read line
 do
