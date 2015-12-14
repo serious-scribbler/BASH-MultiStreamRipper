@@ -91,10 +91,11 @@ while read line
 do
 	((lncounter++))
     command="streamripper $line -d $outfolder -m 10 -l $dur -s > $outfolder/stream$lncounter-$logfile &"
-	eval $command
-	echo "$command"
+	if ["$line" != "" ]; then
+		eval $command
+		echo "$command"
+	fi
 	echo ""
 done < "$infile"
-#command+="| tee $logfile"
 
 exit 0
