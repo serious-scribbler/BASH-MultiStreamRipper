@@ -19,7 +19,7 @@ print_help () {
 	echo "-t <s>	 -	The duration of recording in seconds"
 	echo "-d <path>	 - 	The folder where the output files will be saved"
 	echo "-help		 - 	Shows thid help"
-	echo "-sl <file> -	The textfile to read the radiostation URIs of (line by line)"
+	echo "-sl <file> -	The textfile to read the radiostation URLs of (line by line)"
 	exit 0
 }
 for i in "$@"
