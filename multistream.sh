@@ -14,7 +14,7 @@ timestamp=$(date +'%d-%m-%Y_%H:%M:%S')
 logfile="$timestamp"
 logfile+=".log"
 print_help () {
-	echo "LIST OF AVAILABLE PARAMETERS:"
+	echo "yLIST OF AVAILABLE PARAMETERS:"
 	echo "-k		-	Kills all instances of streamripper"
 	echo "-t <s>	 -	The duration of recording in seconds"
 	echo "-d <path>	 - 	The folder where the output files will be saved"
@@ -91,7 +91,7 @@ while read line
 do
 	((lncounter++))
     command="streamripper $line -d $outfolder -m 10 -l $dur -s > $outfolder/stream$lncounter-$logfile &"
-	if ["$line" != "" ]; then
+	if [ "$line" != "" ]; then
 		eval $command
 		echo "$command"
 	fi
