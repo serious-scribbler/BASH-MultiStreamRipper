@@ -90,7 +90,7 @@ echo "EXECUTING COMMANDS..."
 while read line
 do
 	((lncounter++))
-    command="streamripper $line -d $outfolder -m 10 -l $dur -s -T > $outfolder/stream$lncounter-$logfile &"
+    command="streamripper $line -d $outfolder -m 10 -l $dur -s -T > $outfolder/stream$lncounter-$logfile 2> $outfolder/multistreamNo$lncounter.log &"
 	if [ "$line" != "" ]; then
 		eval $command
 		echo "$command"
